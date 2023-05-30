@@ -22,6 +22,7 @@ let LivingPlace = 'Ferrol'
 console.log (LivingPlace);
 
 const DaysYear = 365;
+
 console.log(DaysYear)
 const MonthsYear = 12;
 console.log(MonthsYear)
@@ -70,6 +71,58 @@ function sumar(a,b){
 }
 
 console.log (sumar (20,30))
+
+function esPar(numero){
+
+    if(numero % 2 ===0){ 
+        return true; // es par
+    }
+    else {
+        return false; // es impar
+    }
+}
+
+console.log(esPar(4))
+console.log(esPar(5))
+
+let coche ={
+    marca: "Mercedes",
+    puertas:5,
+    ruedas:4,
+    plazas: 5,
+    modelo: "deportivo",
+    características:{
+        color:"azul",
+        anyo:2023,
+    }
+    
+}
+
+console.log(coche)
+
+let objetoCoche = document.getElementById('objetoCoche')
+
+let cochePantalla = `
+<h2>Información del coche:</h2>
+<p>Marca: ${coche.marca}</p>
+<p>Puertas: ${coche.puertas}</p>
+<p>Ruedas: ${coche.ruedas}</p>
+<p>Plazas: ${coche.plazas}</p>
+<p>Modelo: ${coche.modelo}</p>
+<h3>Características:</h3>
+<p>Color: ${coche.características.color}</p>
+<p>Año: ${coche.características.anyo}</p>
+`;
+
+objetoCoche.innerHTML = cochePantalla;
+
+
+
+
+
+
+
+
 
 
 
