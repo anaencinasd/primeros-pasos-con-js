@@ -1,5 +1,9 @@
 //Variables
 
+//Número
+
+
+
 let nombre='Ana'
 console.log(nombre);
 
@@ -9,11 +13,32 @@ console.log(ciudad)
 let andaluza = true;
 console.log(andaluza)
 
-const BirthYear = 1987;
-console.log(BirthYear);
 
-let CurrentYear = 2023
-console.log (CurrentYear);
+const BirthYear = 1987;
+document.getElementById('birthYearCardText').textContent += BirthYear;
+console.log (document.getElementById("birthYearCardText").textContent)
+
+let CurrentYear = 2023;
+document.getElementById ("currentYearCardText").textContent += CurrentYear;
+console.log(document.getElementById ("currentYearCardText").textContent)
+
+const DaysYear = 365;
+document.getElementById ("DaysYearCardText").textContent += DaysYear + " " + "días";
+console.log(document.getElementById("DaysYearCardText").textContent)
+
+const MonthsYear = 12;
+document.getElementById("MonthsYearCardText").textContent +=  MonthsYear + " " + "meses";
+console.log (document.getElementById("MonthsYearCardText").textContent)
+
+const DaysMonth = 30
+document.getElementById ("DaysMonthCardText").textContent += DaysMonth + " " + "días"
+console.log (document.getElementById("DaysMonthCardText").textContent)
+
+
+
+
+
+
 
 const BirthPlace = 'Córdoba'
 console.log (BirthPlace);
@@ -21,13 +46,7 @@ console.log (BirthPlace);
 let LivingPlace = 'Ferrol'
 console.log (LivingPlace);
 
-const DaysYear = 365;
 
-console.log(DaysYear)
-const MonthsYear = 12;
-console.log(MonthsYear)
-const DaysMonth = 30;
-console.log(DaysMonth)
 
 let a = 20
 let b = 50
@@ -98,23 +117,23 @@ let coche ={
     
 }
 
-console.log(coche)
+// console.log(coche)
 
-let objetoCoche = document.getElementById('objetoCoche')
+// let objetoCoche = document.getElementById('objetoCoche')
 
-let cochePantalla = `
-<h2>Información del coche:</h2>
-<p>Marca: ${coche.marca}</p>
-<p>Puertas: ${coche.puertas}</p>
-<p>Ruedas: ${coche.ruedas}</p>
-<p>Plazas: ${coche.plazas}</p>
-<p>Modelo: ${coche.modelo}</p>
-<h3>Características:</h3>
-<p>Color: ${coche.características.color}</p>
-<p>Año: ${coche.características.anyo}</p>
-`;
+// let cochePantalla = `
+// <h2>Información del coche:</h2>
+// <p>Marca: ${coche.marca}</p>
+// <p>Puertas: ${coche.puertas}</p>
+// <p>Ruedas: ${coche.ruedas}</p>
+// <p>Plazas: ${coche.plazas}</p>
+// <p>Modelo: ${coche.modelo}</p>
+// <h4>Características:</h4>
+// <p>Color: ${coche.características.color}</p>
+// <p>Año: ${coche.características.anyo}</p>
+// `;
 
-objetoCoche.innerHTML = cochePantalla;
+// objetoCoche.innerHTML = cochePantalla;
 
 
 
