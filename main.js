@@ -2,18 +2,6 @@
 
 //Número
 
-
-
-let nombre='Ana'
-console.log(nombre);
-
-let ciudad= 'Cádiz';
-console.log(ciudad)
-
-let andaluza = true;
-console.log(andaluza)
-
-
 const BirthYear = 1987;
 document.getElementById('birthYearCardText').textContent += BirthYear;
 console.log (document.getElementById("birthYearCardText").textContent)
@@ -34,36 +22,72 @@ const DaysMonth = 30
 document.getElementById ("DaysMonthCardText").textContent += DaysMonth + " " + "días"
 console.log (document.getElementById("DaysMonthCardText").textContent)
 
+//string
 
+let userName='Ana';
+document.getElementById("userNameCardText").textContent += userName;
+console.log(document.getElementById("userNameCardText").textContent);
 
+let city= 'Cádiz';
+document.getElementById("cityCardText").textContent += city;
+console.log(document.getElementById("cityCardText").textContent);
 
-
-
-
-const BirthPlace = 'Córdoba'
-console.log (BirthPlace);
+const BirthPlace = 'Córdoba';
+document.getElementById("BirthPlaceCardText").textContent += BirthPlace;
+console.log(document.getElementById("BirthPlaceCardText").textContent)
 
 let LivingPlace = 'Ferrol'
-console.log (LivingPlace);
+document.getElementById("LivingPlaceCardText").textContent += LivingPlace
+console.log (document.getElementById("LivingPlaceCardText").textContent)
+
+//boolean
+
+let andaluza = true;
+document.getElementById("andaluzaCardText").textContent += andaluza
+console.log(document.getElementById("andaluzaCardText").textContent)
+
+let gallega = false;
+document.getElementById("gallegaCardText").textContent += gallega;
+console.log(document.getElementById("gallegaCardText").textContent)
+
+//OPERACIONES MATEMÁTICAS SIMPLES
+
+let sum = DaysYear + DaysMonth;
+document.getElementById("sumCardText").textContent += sum
+console.log(document.getElementById("sumCardText").textContent)
+
+let sub = CurrentYear - BirthYear;
+document.getElementById("subCardText").textContent += sub +" " + "años"
+console.log(document.getElementById("subCardText").textContent)
+
+
+// let multiplicacion = c * d
+// console.log (multiplicacion)
+
+// let division = b / d
+// console.log (division)
 
 
 
-let a = 20
-let b = 50
-let c = 32
-let d = 210
 
-let suma = a + b;
-console.log(suma);
 
-let resta = d - a;
-console.log (resta);
 
-let multiplicacion = c * d
-console.log (multiplicacion)
 
-let division = b / d
-console.log (division)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 console.log ('Mi nombre es ' + nombre + ' y vivo en ' + LivingPlace + ', aunque nací en ' + BirthPlace + '.')
 
