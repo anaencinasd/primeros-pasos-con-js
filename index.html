@@ -41,22 +41,34 @@
                     <h6 class="card-subtitle mb-2 text-body-secondary">Booleano</h6>
                   <p id="andaluzaCardText" class="card-text">La usuaria ha nacido en Córdoba, por tanto, es andaluza: </p>
                   <p id="gallegaCardText" class="card-text">La usuaria vive en Ferrol, por tanto, es gallega: </p>
-                  <h5 class="card-title">Operaciones matemáticas básicas</h5>
+                  <h5 class="card-subtitle mb-2 text-body">Operaciones matemáticas básicas</h5>
                   <h6 class="card-subtitle mb-2 text-body-secondary">Suma</h6>
                   <p id="sumCardText" class="card-text">Número de días que hay en un año y un mes: </p>
                   <h6 class="card-subtitle mb-2 text-body-secondary">Resta</h6>
                   <p id="subCardText" class="card-text">Edad actual: </p>
                   <h6 class="card-subtitle mb-2 text-body-secondary">Multiplicación</h6>
-                  <p id="multiplicationCardText" class="card-text">Año de nacimiento: </p>
+                  <p id="multiplicationCardText" class="card-text">¿Cuántos meses hay en 30 años?: </p>
                   <h6 class="card-subtitle mb-2 text-body-secondary">División</h6>
-                  <p id="divisionCardText" class="card-text">Año de nacimiento: </p>
+                  <p id="divisionCardText" class="card-text">¿Cuántos días exactos hay en un mes? </p>
+                  <h5 class="card-subtitle mb-2 text-body">Concatenación de strings</h5>
+                  <p id="stringsCardText" class="card-text"></p>
                 </div>
             </div>
             <div class="card">
                 <div class="card-body">
                   <h5 class="card-title">Funciones</h5>
-                  <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <h6 class="card-subtitle mb-2 text-body-secondary">Imprimir hola, [nombre]</h6>
+                  <p class="card-text" id="greetingCardText1"></p>
+                  <p class="card-text" id="greetingCardText2"></p>
+                  <h6 class="card-subtitle mb-2 text-body-secondary">Función que reciba como parámetros dos números y que devuelva la suma de ellos</h6>
+                  <p class="card-text" id="sumFunctionCardText1">¿Cuántos días tienen un año y un mes?: </p>
+                  <p class="card-text" id="sumFunctionCardText2">¿Cuánto es 59 + 72?: </p>
+                  <h6 class="card-subtitle mb-2 text-body-secondary">Función que indique si un número es par o impar</h6>
+                    <label for="numero">Introduce un número</label>
+                    <input type="number" id="numero">
+                    <button onclick="comprobarParImpar()">Comprobar</button>
+                    <p class="card-text" id="resultCardText"></p>
+                  
                 </div>
             </div>
             <div class="card">

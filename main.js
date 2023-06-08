@@ -1,3 +1,7 @@
+
+
+
+
 //Variables
 
 //Número
@@ -60,60 +64,68 @@ let sub = CurrentYear - BirthYear;
 document.getElementById("subCardText").textContent += sub +" " + "años"
 console.log(document.getElementById("subCardText").textContent)
 
+let multiplication = MonthsYear * 30
+document.getElementById("multiplicationCardText").textContent += sub +" " + "meses"
+console.log(document.getElementById("multiplicationCardText").textContent)
 
-// let multiplicacion = c * d
-// console.log (multiplicacion)
+let division = DaysYear / MonthsYear
+document.getElementById("divisionCardText").textContent += sub +" " + "días"
+console.log(document.getElementById("multiplicationCardText").textContent)
 
-// let division = b / d
-// console.log (division)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-console.log ('Mi nombre es ' + nombre + ' y vivo en ' + LivingPlace + ', aunque nací en ' + BirthPlace + '.')
-
-
+document.getElementById("stringsCardText").textContent += "Mi nombre es " + userName + ' y vivo en ' + LivingPlace + ', aunque nací en ' + BirthPlace + '.'
+console.log(document.getElementById("stringsCardText").textContent)
 
 //FUNCIONES
 
 function saludo (nombre){
     return 'Hola ' + nombre
 }
-console.log (saludo ('mundo'))
+
+document.getElementById("greetingCardText1").textContent = saludo ("Manu")
+document.getElementById("greetingCardText2").textContent = saludo ("María")
+console.log (document.getElementById("greetingCardText1").textContent)
+console.log (document.getElementById("greetingCardText2").textContent)
 
 
-function saludar (Ana){
-    return 'Hola Ana'
+
+
+function sumar(DaysYear,DaysMonth){
+    let resultado = DaysYear + DaysMonth;
+    return resultado;
 }
 
-console.log (saludar)
+document.getElementById("sumFunctionCardText1").textContent += sumar (DaysYear,DaysMonth) + " " + "días"
+document.getElementById("sumFunctionCardText2").textContent += sumar (59,72)
 
-function sumar(a,b){
-    let resultado = a + b
-    return resultado
+console.log (document.getElementById("sumFunctionCardText1").textContent)
+console.log(sumar(59,72))
 
-}
 
-console.log (sumar (20,30))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//FUNCIONES
+
+
+
 
 function esPar(numero){
 
@@ -124,6 +136,18 @@ function esPar(numero){
         return false; // es impar
     }
 }
+
+function comprobarParImpar(){
+    let numero = document.getElementById("numero").value;
+    let resultadoElemento = document.getElementById("resultCardText");
+
+    if(esPar(numero)){
+        resultadoElemento.textContent="El número que has introducido es par.";
+    } else{
+        resultadoElemento.textContent = "El número que has introducido es impar.";
+    }
+    }
+
 
 console.log(esPar(4))
 console.log(esPar(5))
