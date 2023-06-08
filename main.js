@@ -1,7 +1,3 @@
-
-
-
-
 //Variables
 
 //Número
@@ -65,11 +61,11 @@ document.getElementById("subCardText").textContent += sub +" " + "años"
 console.log(document.getElementById("subCardText").textContent)
 
 let multiplication = MonthsYear * 30
-document.getElementById("multiplicationCardText").textContent += sub +" " + "meses"
+document.getElementById("multiplicationCardText").textContent += multiplication +" " + "meses"
 console.log(document.getElementById("multiplicationCardText").textContent)
 
 let division = DaysYear / MonthsYear
-document.getElementById("divisionCardText").textContent += sub +" " + "días"
+document.getElementById("divisionCardText").textContent += division +" " + "días"
 console.log(document.getElementById("multiplicationCardText").textContent)
 
 document.getElementById("stringsCardText").textContent += "Mi nombre es " + userName + ' y vivo en ' + LivingPlace + ', aunque nací en ' + BirthPlace + '.'
@@ -102,31 +98,6 @@ console.log(sumar(59,72))
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//FUNCIONES
-
-
-
-
 function esPar(numero){
 
     if(numero % 2 ===0){ 
@@ -148,22 +119,103 @@ function comprobarParImpar(){
     }
     }
 
+    console.log(esPar(7))
+    console.log(esPar(4))
 
-console.log(esPar(4))
-console.log(esPar(5))
 
-let coche ={
-    marca: "Mercedes",
-    puertas:5,
-    ruedas:4,
-    plazas: 5,
-    modelo: "deportivo",
-    características:{
-        color:"azul",
-        anyo:2023,
+
+    //OBJETOS
+
+    let coche ={
+        marca: "Mercedes",
+        puertas:5,
+        ruedas:4,
+        plazas: 5,
+        modelo: "deportivo",
+        caracteristicas:{
+            color:"azul",
+            anyo:2023,
+        }
+        
     }
+
+    console.log(coche)
+
+    //función que devuelve la marca
+
+    function marca (objeto){
+        return objeto.marca
+    }
+    let marcaCoche = marca(coche)
     
-}
+    document.getElementById("marcaObjetoCocheTextCard").textContent += marcaCoche; 
+    console.log(coche.marca);
+
+    //función que devuelve el número de puertas
+
+    function puertas (objeto){
+        return objeto.puertas
+    }
+
+    let puertasCoche = puertas (coche)
+
+    
+    document.getElementById("puertasObjetoCoche").textContent += puertasCoche + " " + "puertas.";
+    console.log(coche.puertas)
+
+    //función que devuelve un atributo del objeto anidado
+
+    function color(objeto){
+        return objeto.caracteristicas.color
+    }
+
+    let colorCoche = color(coche)
+
+    
+    document.getElementById("colorObjetoCocheCardText").textContent += colorCoche
+    console.log(coche.caracteristicas.color)
+
+
+    //ARRAYS
+
+    //crear un array de 10 números
+
+    const numbers = [1,2,3,4,5,6,7,8,9,10];
+
+    //Función que imprima en consola todos los números del array
+    document.getElementById("arrayCardText").textContent = numbers
+    console.log(numbers)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // console.log(coche)
 
